@@ -112,3 +112,10 @@ body {
         display: none;
     }
 }
+
+.flex-mobile-column {
+    @media (max-width: $tablet) {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+}
