@@ -1,0 +1,24 @@
+// FONTS
+
+@font-face {
+    font-family: "dinBold";
+    src: url(./font/DINPro-Bold.otf);
+}
+
+@font-face {
+    font-family: "dinMedium";
+    src: url(./font/DINPro-Medium.otf);
+}
+
+@font-face {
+    font-family: "dinLight";
+    src: url(./font/DINPro-Light.otf);
+}
+
+.flex {
+    display: flex;
+}
+
+body {
+    font-family: "dinLight";
+}
