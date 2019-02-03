@@ -1,3 +1,7 @@
+body, h1, h2, h3, h4, h5, ul {
+  margin: 0;
+}
+
 @font-face {
   font-family: "dinBold";
   src: url(./font/DINPro-Bold.otf);
@@ -14,8 +18,53 @@
   display: flex;
 }
 
+.center {
+  align-items: center;
+}
+
+.vertical-align-center {
+  justify-content: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.m-5 {
+  margin: 5px;
+}
+
 body {
   font-family: "dinLight";
+}
+
+.banner {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.banner * {
+  margin: 5px;
+}
+.banner a {
+  color: white;
+  font-family: dinBold;
+}
+
+.main-nav {
+  height: 60px;
+}
+.main-nav a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.main-nav a.active {
+  color: #f15b4c;
+}
+.main-nav .cart-logo {
+  width: 15px;
 }
 
 /*# sourceMappingURL=styles.css.map */
