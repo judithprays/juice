@@ -1,8 +1,10 @@
+// BANNER
+
 .banner {
     background-color: black;
     color: white;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 16px;
     * {
         margin: 5px;
     }
@@ -12,8 +14,10 @@
     }
 }
 
+// MAIN NAV
+
 .main-nav {
-    height: 60px;
+    padding: 10px;
     a {
         color: black;
         text-decoration: none;
@@ -21,8 +25,33 @@
         &.active {
             color: $red;
         }
+        &:hover{
+            color: $red;
+            transition: 0.3s ease-in;
+        }
     }
     .cart-logo {
         width: 15px;
+    }
+    .cart {
+        color: red;
+    }
+}
+
+// BLOCKS 
+.block {
+    padding: 30px;
+}
+
+// HERO
+
+.hero {
+    padding: 10%;
+    background-image: url(./img/hero.png);
+    .header {
+        max-width: 650px;
+    }
+    .copy {
+        font-size: 24px;
     }
 }

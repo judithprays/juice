@@ -1,6 +1,6 @@
 // RESET
 
-body, h1, h2, h3, h4, h5, ul {
+html, body, h1, h2, h3, h4, h5, ul {
     margin: 0;
 }
 
@@ -43,11 +43,54 @@ body, h1, h2, h3, h4, h5, ul {
 // SPACERS
 .m-5 {
     margin: 5px;
+    font-family: "dinMedium";
 }
 
+
+// HEADERS
+.header {
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.copy {
+    font-size: 16px;
+}
+
+// BUTTONS
+
+%button {
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 15px 45px;
+
+}
+
+.button--fill {
+    @extend %button;
+    background-color: $red;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.button--outline {
+    @extend %button;
+    color: $red;
+    outline: none;
+    border: 1px solid $red;
+}
 
 
 // GLOBAL
 body {
     font-family: "dinLight";
+}
+
+// DESKTOP / MOBILE
+
+.desktop-only {
+    @media (max-width: $desktop) {
+        display: none;
+    }
 }

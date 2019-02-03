@@ -1,4 +1,4 @@
-body, h1, h2, h3, h4, h5, ul {
+html, body, h1, h2, h3, h4, h5, ul {
   margin: 0;
 }
 
@@ -32,17 +32,52 @@ body, h1, h2, h3, h4, h5, ul {
 
 .m-5 {
   margin: 5px;
+  font-family: "dinMedium";
+}
+
+.header {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.copy {
+  font-size: 16px;
+}
+
+.button--outline, .button--fill {
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 15px 45px;
+}
+
+.button--fill {
+  background-color: #f15b4c;
+  color: white;
+  outline: none;
+  border: none;
+}
+
+.button--outline {
+  color: #f15b4c;
+  outline: none;
+  border: 1px solid #f15b4c;
 }
 
 body {
   font-family: "dinLight";
 }
 
+@media (max-width: 1000px) {
+  .desktop-only {
+    display: none;
+  }
+}
+
 .banner {
   background-color: black;
   color: white;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 16px;
 }
 .banner * {
   margin: 5px;
@@ -53,7 +88,7 @@ body {
 }
 
 .main-nav {
-  height: 60px;
+  padding: 10px;
 }
 .main-nav a {
   color: black;
@@ -63,8 +98,30 @@ body {
 .main-nav a.active {
   color: #f15b4c;
 }
+.main-nav a:hover {
+  color: #f15b4c;
+  transition: 0.3s ease-in;
+}
 .main-nav .cart-logo {
   width: 15px;
+}
+.main-nav .cart {
+  color: red;
+}
+
+.block {
+  padding: 30px;
+}
+
+.hero {
+  padding: 10%;
+  background-image: url(./img/hero.png);
+}
+.hero .header {
+  max-width: 650px;
+}
+.hero .copy {
+  font-size: 24px;
 }
 
 /*# sourceMappingURL=styles.css.map */
