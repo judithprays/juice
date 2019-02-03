@@ -53,6 +53,11 @@ html, body, h1, h2, h3, h4, h5, ul {
     text-transform: uppercase;
 }
 
+.subheader {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
 .copy {
     font-size: 16px;
 }
@@ -77,8 +82,21 @@ html, body, h1, h2, h3, h4, h5, ul {
 .button--outline {
     @extend %button;
     color: $red;
+    background-color: transparent;
     outline: none;
     border: 1px solid $red;
+}
+
+
+// BLOCKS
+.block {
+    padding: 5%;
+    text-align: center;
+    .copy {
+        max-width: 53%;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
 }
 
 

@@ -38,11 +38,6 @@
     }
 }
 
-// BLOCKS 
-.block {
-    padding: 30px;
-}
-
 // HERO
 
 .hero {
@@ -54,4 +49,62 @@
     .copy {
         font-size: 24px;
     }
+}
+
+// STEPS
+
+.steps {
+    max-width: 95%;
+    margin: 0 auto;
+    p {
+        margin: 0;
+        text-align: left;
+    }
+}
+
+.step_container {
+    position: relative;
+    height: 200px;
+    width: 260px;
+}
+
+.step_number {
+    font-size: 200px;
+    color: $red;
+    font-family: "dinBold";
+    line-height: 205px;
+    margin: 0;
+    position: absolute;
+    z-index: 0;
+    right: 0;
+}
+
+.step_copy-container {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    &.with-copy {
+        margin-top:18px;
+    }
+}
+
+.step_copy {
+    font-size: 20px;
+    font-family: "dinMedium";
+    border-bottom: 1px solid black;
+    padding-bottom: 2px;
+    margin-bottom: 2px;
+    padding-right: 45px;
+}
+
+.step_sub-copy{
+    max-width: 50%;
+}
+
+// DRINKS
+
+.slider {
+    background-image: url(./img/juice.png);
 }

@@ -40,6 +40,11 @@ html, body, h1, h2, h3, h4, h5, ul {
   text-transform: uppercase;
 }
 
+.subheader {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
 .copy {
   font-size: 16px;
 }
@@ -59,8 +64,19 @@ html, body, h1, h2, h3, h4, h5, ul {
 
 .button--outline {
   color: #f15b4c;
+  background-color: transparent;
   outline: none;
   border: 1px solid #f15b4c;
+}
+
+.block {
+  padding: 5%;
+  text-align: center;
+}
+.block .copy {
+  max-width: 53%;
+  margin: 0 auto;
+  margin-top: 15px;
 }
 
 body {
@@ -109,10 +125,6 @@ body {
   color: red;
 }
 
-.block {
-  padding: 30px;
-}
-
 .hero {
   padding: 10%;
   background-image: url(./img/hero.png);
@@ -122,6 +134,60 @@ body {
 }
 .hero .copy {
   font-size: 24px;
+}
+
+.steps {
+  max-width: 95%;
+  margin: 0 auto;
+}
+.steps p {
+  margin: 0;
+  text-align: left;
+}
+
+.step_container {
+  position: relative;
+  height: 200px;
+  width: 260px;
+}
+
+.step_number {
+  font-size: 200px;
+  color: #f15b4c;
+  font-family: "dinBold";
+  line-height: 205px;
+  margin: 0;
+  position: absolute;
+  z-index: 0;
+  right: 0;
+}
+
+.step_copy-container {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+.step_copy-container.with-copy {
+  margin-top: 18px;
+}
+
+.step_copy {
+  font-size: 20px;
+  font-family: "dinMedium";
+  border-bottom: 1px solid black;
+  padding-bottom: 2px;
+  margin-bottom: 2px;
+  padding-right: 45px;
+}
+
+.step_sub-copy {
+  max-width: 50%;
+}
+
+.slider {
+  background-image: url(./img/juice.png);
 }
 
 /*# sourceMappingURL=styles.css.map */
