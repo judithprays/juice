@@ -46,6 +46,9 @@ html, body, h1, h2, h3, h4, h5, ul {
     font-family: "dinMedium";
 }
 
+.p-10 {
+    padding: 10px;
+}
 
 // HEADERS
 .header {
@@ -111,6 +114,10 @@ body {
     font-family: "dinLight";
 }
 
+.hide {
+    opacity: 0;
+}
+
 // DESKTOP / MOBILE
 
 .desktop-only {
@@ -124,4 +131,18 @@ body {
         flex-direction: column;
         margin: 0 auto;
     }
+}
+
+// OVERLAY
+.overlay_container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #fbfafb;
 }

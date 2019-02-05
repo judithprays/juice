@@ -17,7 +17,6 @@
 // MAIN NAV
 
 .main-nav {
-    padding: 10px;
     a {
         color: black;
         text-decoration: none;
@@ -36,6 +35,21 @@
     .cart {
         color: red;
     }
+}
+
+.nav_expanded {
+    padding: 15px;
+    font-size: 17px;
+    li {
+        margin-top: 15px;
+    }
+    h2 {
+        text-transform: uppercase;
+        font-size: 17px;
+    }
+    position: fixed;
+    width: 100%;
+    background: white;
 }
 
 // HERO
@@ -65,6 +79,9 @@
     @media (max-width: $desktop) {
         max-width: 300px;
         margin: 0 auto;
+        .step_container {
+            margin: 0 auto;
+        }
     }
 }
 
@@ -116,4 +133,15 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 20%;
+}
+
+// NAV MANU 
+
+.nav_list {
+    list-style: none;
+    padding: 0;
+    a {
+        color: black;
+        text-decoration: none;
+    }
 }

@@ -35,6 +35,10 @@ html, body, h1, h2, h3, h4, h5, ul {
   font-family: "dinMedium";
 }
 
+.p-10 {
+  padding: 10px;
+}
+
 .header {
   font-size: 50px;
   text-transform: uppercase;
@@ -89,6 +93,10 @@ body {
   font-family: "dinLight";
 }
 
+.hide {
+  opacity: 0;
+}
+
 @media (max-width: 1000px) {
   .desktop-only {
     display: none;
@@ -100,6 +108,19 @@ body {
     flex-direction: column;
     margin: 0 auto;
   }
+}
+
+.overlay_container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #fbfafb;
 }
 
 .banner {
@@ -116,9 +137,6 @@ body {
   font-family: dinBold;
 }
 
-.main-nav {
-  padding: 10px;
-}
 .main-nav a {
   color: black;
   text-decoration: none;
@@ -136,6 +154,21 @@ body {
 }
 .main-nav .cart {
   color: red;
+}
+
+.nav_expanded {
+  padding: 15px;
+  font-size: 17px;
+  position: fixed;
+  width: 100%;
+  background: white;
+}
+.nav_expanded li {
+  margin-top: 15px;
+}
+.nav_expanded h2 {
+  text-transform: uppercase;
+  font-size: 17px;
 }
 
 .hero {
@@ -162,6 +195,9 @@ body {
 @media (max-width: 1000px) {
   .steps {
     max-width: 300px;
+    margin: 0 auto;
+  }
+  .steps .step_container {
     margin: 0 auto;
   }
 }
@@ -212,6 +248,15 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 20%;
+}
+
+.nav_list {
+  list-style: none;
+  padding: 0;
+}
+.nav_list a {
+  color: black;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
