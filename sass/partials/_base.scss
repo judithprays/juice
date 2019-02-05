@@ -5,6 +5,11 @@ html, body, h1, h2, h3, h4, h5, ul {
 }
 
 
+// GLOBAL
+body {
+    font-family: "dinLight";
+}
+
 // FONTS
 
 @font-face {
@@ -112,17 +117,7 @@ html, body, h1, h2, h3, h4, h5, ul {
     width: 15px;
 }
 
-
-// GLOBAL
-body {
-    font-family: "dinLight";
-}
-
-.hide {
-    opacity: 0;
-}
-
-// DESKTOP / MOBILE
+// DESKTOP / MOBILE / DISPLAY HELPERS
 
 .desktop-only {
     @media (max-width: $desktop) {
@@ -137,48 +132,7 @@ body {
     }
 }
 
-// OVERLAY
-.overlay_container {
-    position: relative;
-    width: 22%;
-    background-repeat: no-repeat;
-    background-size: cover;   
-    min-height: 247px;
-    background-position: center;
-    &.drink1 {
-        background-image: url(./img/drinks_1.png);
-    }
-    &.drink2 {
-        background-image: url(./img/drinks_2.png);
-    }
-    &.drink3 {
-        background-image: url(./img/drinks_3.png);
-    }
-    &.drink4 {
-        background-image: url(./img/drinks_4.png);
-    }
-}
-
-.overlay_img {
-    z-index: 0;
-}
-
-.overlay {
-    width: 100%;
-    height: 100%;
-    background-color: #fbfafb;
-    z-index: 1;
+.hide {
     opacity: 0;
-    border: 1px solid red;
-    transition: opacity 0.3s ease-in;
-    .overlay_text {
-        color: $red;
-    }
 }
 
-.overlay_container:hover {
-    .overlay {
-        opacity: 0.8;
-        cursor: pointer;
-    }
-}
