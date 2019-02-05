@@ -39,6 +39,10 @@ html, body, h1, h2, h3, h4, h5, ul {
   padding: 10px;
 }
 
+.mt-45 {
+  margin-top: 45px;
+}
+
 .header {
   font-size: 50px;
   text-transform: uppercase;
@@ -110,17 +114,51 @@ body {
   }
 }
 
+.flex-mobile-grid {
+  flex-wrap: wrap;
+}
+
 .overlay_container {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
+  position: relative;
+  width: 22%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 247px;
+  background-position: center;
+}
+.overlay_container.drink1 {
+  background-image: url(./img/drinks_1.png);
+}
+.overlay_container.drink2 {
+  background-image: url(./img/drinks_2.png);
+}
+.overlay_container.drink3 {
+  background-image: url(./img/drinks_3.png);
+}
+.overlay_container.drink4 {
+  background-image: url(./img/drinks_4.png);
+}
+
+.overlay_img {
+  z-index: 0;
+}
+
+.overlay {
   width: 100%;
-  opacity: 0;
-  transition: 0.5s ease;
+  height: 100%;
   background-color: #fbfafb;
+  z-index: 1;
+  opacity: 0;
+  border: 1px solid red;
+  transition: opacity 0.3s ease-in;
+}
+.overlay .overlay_text {
+  color: #f15b4c;
+}
+
+.overlay_container:hover .overlay {
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .banner {
